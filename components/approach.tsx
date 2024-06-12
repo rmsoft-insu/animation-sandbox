@@ -10,7 +10,7 @@ export function Approach() {
       <h1 className="heading">
         My&nbsp;<span className="text-purple">approach</span>
       </h1>
-      <div className="mx-auto my-20 flex w-full flex-col items-center justify-center gap-4 bg-white px-8 py-20 dark:bg-black lg:flex-row">
+      <div className="mx-auto my-20 flex w-full flex-col items-center justify-center gap-4 px-8 py-20 lg:flex-row">
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
