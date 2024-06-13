@@ -53,6 +53,10 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText("contact@copycopy.com");
 
     setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
   };
 
   return (
@@ -68,7 +72,7 @@ export const BentoGridItem = ({
       }}
     >
       <div className={cn(id === 6 && "flex justify-center", "h-full")}>
-        <div className="absolute h-full w-full">
+        <div className="absolute left-0 top-0 h-full w-full">
           {img && (
             <img
               src={img}
@@ -106,7 +110,7 @@ export const BentoGridItem = ({
           <div className="z-10 font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base">
             {description}
           </div>
-          <div className="z-10 mb-2 mt-2 max-w-96 font-sans text-lg font-bold text-neutral-600 dark:text-neutral-200 lg:text-3xl">
+          <div className="z-20 mb-2 mt-2 max-w-96 font-sans text-lg font-bold text-neutral-600 dark:text-neutral-200 lg:text-3xl">
             {title}
           </div>
 
